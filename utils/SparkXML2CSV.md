@@ -47,7 +47,7 @@ $ echo '</posts>' >> xaa
 
 ### Start the conversion file by file
 
-Now, start the conversion. Take a long time, so, nohup is usefull.  Set the correct file name (without xml extension).
+Now, start the conversion.  Set the correct file name (without xml extension) and the file you want to convert. Take a long time, so, nohup is usefull.
 
 ```  
 $ nohup ./sparkxml2csv.py Posts xaa &
