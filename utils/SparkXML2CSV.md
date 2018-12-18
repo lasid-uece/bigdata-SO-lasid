@@ -9,8 +9,8 @@ This script needs to load all file in RAM memory and it is necessary to split th
 The script is prepared to convert all Stack Overflow XML files. To change the parameters names that should be read, change the field list, for example:
 
 ```
-if file_name == "Badges":				# Badges.xml.gz
-	  fields = ["Id","UserId","Name","Date","Class","TagBased"]
+if file_name == "Posts":		# Posts.xml.gz
+	fields =["Id","PostTypeId","AcceptedAnswerId","ParentId",...,"FavoriteCount"]
 ```
 
 ## Procedure
