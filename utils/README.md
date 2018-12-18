@@ -4,7 +4,7 @@
 
 This script convert XML files, provided by Stack Overflow, to CSV, to be used in Apache Spark environment. This XML format has the rows marked as *<row  parameter1=xxx parameter2=yyy >*. As the collumn field is a attribute most of XML parsers can't read correct. 
 
-This script needs to load all file in RAM memory and it is necessary to split the XML files to maximum length. Fo lasid50, lasid60 and lasid70 servers the max file length is almost 7.2GB. For others, the max value should be checked.
+This script needs to load all file in RAM memory and it is necessary to split the XML files to maximum length. For lasid50, lasid60 and lasid70 servers the max file length is almost 7.2GB. For others, the max value should be checked.
 
 ## Procedure
 
