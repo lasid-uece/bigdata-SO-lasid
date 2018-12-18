@@ -56,10 +56,10 @@ The new CSV file is xaa.csv
 
 ### Join all CSV files in one
 
-Finally, join all csv parts in one big file (from xaa.csv to caz.csv) :
+Finally, join all csv parts in one big file (from xaa.csv to caz.csv). Take a long time, so, nohup is usefull.
 
 ```
-$ cat xa?.csv > Posts.csv
+$ nohup cat xa?.csv > Posts.csv &
 ```
 
 The convertion of xml to csv file is done.
