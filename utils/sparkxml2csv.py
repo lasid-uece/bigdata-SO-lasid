@@ -38,22 +38,22 @@ if not os.path.exists(xml_fname):
     print("There is no "+xml_fname+" file")
     sys.exit()
 
-if file_name == "Badges":				# Badges.xml.gz
+if file_name == "Badges":		# Badges.xml
 	fields = ["Id","UserId","Name","Date","Class","TagBased"]
-elif file_name == "Comments":			# Comments.xml.gz
+elif file_name == "Comments":		# Comments.xml
 	fields = ["Id","PostId","Score","Text","CreationDate","UserDisplayName","UserId"]
-elif file_name == "PostHistory":		# PostHistory.xml.gz
+elif file_name == "PostHistory":	# PostHistory.xml
 	fields = ["Id","PostHistoryTypeId","PostId","RevisionGUID","CreationDate","UserId","UserDisplayName","Comment","Text"]
-elif file_name == "PostLinks":			# PostLinks.xml.gz
+elif file_name == "PostLinks":		# PostLinks.xml
 	fields = ["Id","CreationDate","PostId","RelatedPostId","LinkTypeId"]
-elif file_name == "Posts":				# Posts.xml.gz
+elif file_name == "Posts":		# Posts.xml
 	fields = ["Id","PostTypeId","AcceptedAnswerId","ParentId","CreationDate","Score","ViewCount","Body","OwnerUserId","OwnerDisplayName","LastEditorUserId","LastEditorDisplayName","LastEditDate","LastActivityDate","Title","Tag","AnswerCount","CommentCount","FavoriteCount"]
-elif file_name == "Tags":				# Tags.xml.gz
+elif file_name == "Tags":		# Tags.xml
 	fields = ["Id","TagName","Count","ExcerptPostId","WikiPostId"]
-elif file_name == "Users":				# Users.xml.gz
+elif file_name == "Users":		# Users.xml
 	fields = ["Id","Reputation","CreationDate","DisplayName","LastAccessDate","WebsiteUrl","Location","ProfileImageUrl","AboutMe","Views","UpVotes","DownVotes","Age","AccountId","EmailHash"]
-elif file_name == "Votes":				# Votes.xml.gz
-	fields = ["Id","PostId","VoteTypeId","CreationDate"]
+elif file_name == "Votes":		# Votes.xml
+	fields = ["Id","PostId","VoteTypeId","UserId","CreationDate","BountyAmount"]
 else:
     print("There is no "+file_name+" parameters available")
     sys.exit()
