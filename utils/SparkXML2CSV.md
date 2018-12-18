@@ -6,16 +6,18 @@ This script convert XML files provided by Stack Overflow to CSV to use in Apache
 
 This script needs to load all file in RAM memory and it is necessary to split the XML files to maximum length. Fo lasid50, lasid60 and lasid70 servers the max file length is almost 7.2GB. For others, the max value should be tested.
 
-The script is prepared to convert all Stack Overflow XML files. To change the parameters names that should be read, change the field list, for example:
-
-```
-if file_name == "Posts":		# Posts.xml.gz
-	fields =["Id","PostTypeId","AcceptedAnswerId","ParentId",...,"FavoriteCount"]
-```
-
 ## Procedure
 
 In this example, the Posts.xml file is used.
+
+### Configure the script if needed.
+
+The script is prepared to convert all Stack Overflow XML files. To change the parameters names that should be read, change the field list, for example:
+
+```
+if file_name == "Posts":		# Posts.xml
+	fields =["Id","PostTypeId","AcceptedAnswerId","ParentId",...,"FavoriteCount"]
+```
 
 ### Split the big XML file
 
