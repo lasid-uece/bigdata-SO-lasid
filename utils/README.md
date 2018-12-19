@@ -62,4 +62,4 @@ Finally, join all csv parts in one big file (from xaa.csv to xaz.csv). Take a lo
 $ nohup cat xa?.csv > Posts.csv &
 ```
 
-The convertion of xml to csv file is done.
+The conversion of xml to csv file is done.
